@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "SqueakyChalkSound";
+  src: url("SqueakyChalkSound.ttf");
+}
+
+@font-face {
+  font-family: "Rudiment";
+  src: url("Rudiment.ttf");
+}
+
+body {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-image: url("../images/chalkboard.jpg");
+  background-size: cover;
+
+}
+h1 {
+  font-size: 4em;
+  font-family: "SqueakyChalkSound";
+  color: lightgrey;
+  text-shadow: 7px 7px 3px black;
+}
+
+.instructions {
+  color: lightgrey;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Rudiment";
+  padding-bottom: 20px;
+  text-shadow: 7px 7px 3px black;
+}
+
+table {
+  border: 5px solid lightgrey;
+  border-style: groove;
+  margin: 0px auto;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  border-style: groove;
+  font-family: "SqueakyChalkSound";
+  font-size: 4em;
+  text-align: center;
+  color: slategrey;
+  text-shadow: 0px 0px 10px black;
+
+}
+
+.message {
+  color: lightgrey;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+  text-shadow: 7px 7px 3px black;
+  font-family: "Rudiment";
+  margin-bottom: 20px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0%);
+  transition: transform 0.25s linear;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal h1 {
+  align-self: center;
+  color: slategrey;
+  font-size: 4em;
+  text-shadow: 7px 7px 3px black;
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 3em;
+  background-color: lightgrey;
+  font-family: "Rudiment";
+  margin-bottom: 15px;
+}
